@@ -19,12 +19,22 @@ body {
     color: #fff;
     overflow-x: hidden;
     padding-bottom: 58px;
+    
+}
+
+@keyframes heading{
+    to{
+        transform: translateX(0);
+    }
 }
 
 #main-header {
     background: var(--secondary-color);
     padding: 4rem 0;
+    
 }
+
+
 
 .container {
     max-width: var(--max-width);
@@ -55,9 +65,34 @@ h1 {
     font-size: 2.3rem;
 }
 
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(3%);
+    }
+}
+
+@keyframes lists{
+    to{
+        transform: translateY(0);
+    }
+}
+
+h1{
+    /* transform: translateX(-1200px); */
+    animation: slide .5s ease-in-out forwards;
+}
+
+.animations {
+    animation: slide 1s ease-in-out forwards;
+}
+
 #timeline ul {
     background: var(--primary-color);
     padding: 50px 0;
+
 }
 
 /* Create Line */
@@ -68,6 +103,7 @@ h1 {
     margin: 0 auto;
     padding-top: 50px;
     background: #fff;
+    animation: lists 3s forwards ease-in 2s;
 }
 
 /* Boxes */
@@ -78,6 +114,7 @@ h1 {
     padding: 1rem;
     background: var(--secondary-color);
     transition: all 0.5s ease-in-out;
+    animation: mymove .6s linear;
 
 }
 
@@ -91,6 +128,19 @@ h1 {
     left: -434px;
 }
 
+@keyframes mymove {
+    from {
+     transform: scale(0);
+     opacity: 0;
+   };
+  
+   to{
+     
+       transform: scale(1);
+       opacity: 1;
+   }
+  }
+
 /* Dots */
 #timeline ul li::after {
     content: '';
@@ -102,8 +152,10 @@ h1 {
     background: var(--secondary-color);
     transform: translateX(-50%);
     border-radius: 50%;
-    transition: background 0.5s ease-in-out;
+    /* transition: all 0.5s ease-in-out; */
+    animation: mymove .6s linear;
 }
+
 
 #timeline div::before {
     content: '';

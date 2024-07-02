@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css1/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Personal Technology Goals</title>
+</head>
+
+<body>
+    <header id="main-header" data-testid="header">
+        <div class="container">
+            <h1><i class="fas fa-book"></i>
+                My Technology Goals For The Next Two Years
+            </h1>
+            <h3 data-testid="slackDisplayName"><i class="fas fa-user"></i>
+                Iyenomen Akhigbe 
+            </h3>
+            <h3 data-testid="slackEmail">iyenomenakhigbe@gmail.com</h3>
+            <h3 id="time-utc" data-testid="currentTimeUTC"></h3>
+            <h3 id="days" data-testid="currentDay">Day:</h3>
+        </div>
+    </header>
+
+    <section id="timeline" data-testid="goal-segments">
+        <ul>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2025: 1st Quarter</h3>
+                    <p>Master Modern JavaScript Frameworks:
+                        Gain expertise in frameworks like React, Angular, or Vue.js, including their core concepts, state management, and building complex applications.
+                        </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2025: 2nd Quarter</h3>
+                    <p>Enhance CSS and Design Skills:
+                        Learn advanced CSS techniques such as CSS Grid, Flexbox, and animations. Focus on UI/UX design principles to create visually appealing and user-friendly interfaces.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2025: 3rd Quarter</h3>
+                    <p>Adopt Best Practices in Coding:
+                        Write clean, maintainable code, use version control (Git), follow design patterns, and conduct regular code reviews to maintain high-quality code and improve team collaboration.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2026: 1st Quarter</h3>
+                    <p>Learn and Apply Testing Strategies:
+                        Write unit tests, integration tests, and end-to-end tests using frameworks like Jest, Mocha, or Cypress to ensure your applications are reliable and bug-free.
+                        </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2026: 2nd Quarter</h3>
+                    <p>Contribute to Open Source Projects:
+
+                        Gain practical experience and exposure to collaborative development by contributing to open source projects, improving your coding skills and understanding various coding styles.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i>
+                        2026: 3rd Quarter</h3>
+                    <p>Stay Updated with Industry Trends:
+
+                        Continuously learn about the latest trends and technologies in frontend and software development through blogs, conferences, online courses, and networking with other professionals in the field.</p>
+                </div>
+            </li>
+            <li>
+                <div data-testid="links" class="Links">
+                    <h3><i class="fas fa-chevron-right"></i>
+                        Links</h3>
+                    <p class="cursor" data-testid="hngLink" onclick="window.open('https:\/\/hng.tech/learn')">
+                        hng.tech/learn
+                    </p>
+                    <p class="cursor" data-testid="keywordLink" onclick="window.open('https:\/\/keyword.dog')">
+                        keyword.dog
+                    </p>
+                    <p class="cursor" data-testid="scrapeanywebLink" onclick="window.open('https:\/\/scrapeanyweb.site')">
+                        scrapeanyweb.site
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -41,6 +41,16 @@ body {
    color: #fff;
 }
 
+.img {
+    border-radius: 50%;
+    box-shadow:0 0 3px 2px #425b84;
+    /* border-bottom: 5px solid black; */
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+
+
+}
+
 h1 {
     font-size: 2.3rem;
 }
